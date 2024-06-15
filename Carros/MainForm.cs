@@ -15,21 +15,52 @@ namespace Carros
 		{
 			Lista_carros.LoadFile("carros.txt", RichTextBoxStreamType.PlainText);
 			button2.Enabled = true;
+			button1.Enabled = false;
 		}
 		void Button2Click(object sender, EventArgs e)
 		{
+			//Separação do valor para o label
+			
 			button3.Enabled = true;
 			
+			float valorm = 0;
+			
 			for(int i = 0; i < 15; i++)
-			{
-				string b = Lista_carros.Lines[i];
-				string[] a = b.Split('#');
+			{		
+				
+			string b = Lista_carros.Lines[i];
+			string[] a = b.Split('#');
 				
 				int media1 = int.Parse(a[1]);
 				
-				richTextBox1.Text += media1.ToString() + "\n";
+				valorm += media1;
 			}
-			int tristeza = int.Parse(richTextBox1.Lines[0] + richTextBox1.Lines[1] + richTextBox1.Lines[2] + richTextBox1.Lines[3] + richTextBox1.Lines[4] + richTextBox1.Lines[5] + richTextBox1.Lines[6] + richTextBox1.Lines[7] + richTextBox1.Lines[8] + richTextBox1.Lines[9] + richTextBox1.Lines[10] + richTextBox1.Lines[11] + richTextBox1.Lines[12] + richTextBox1.Lines[13] + richTextBox1.Lines[14]);
+			float x = valorm /15;
+			//separando os acima da média paa o richtextbox da direita.
+			
+			label3.Text = "Média: " + x.ToString();
+			
+			string decisao = label3.Text;
+			//-------------------------------------------------------//
+			for(int i = 0; i < 15; i++){
+				
+				
+			string b = Lista_carros.Lines[i];
+			string[] a = b.Split('#');
+			
+			int c = int.Parse(a[1]);
+			
+			if(c > 260){
+				Lista_eco.Text += a[0] + "\n";
+			}
 		}
+			button2.Enabled = false;
 	}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+			Lista_eco.SaveFile("melhores.txt", RichTextBoxStreamType.PlainText);
+			MessageBox.Show("Arquivo salvo com sucesso");
+		}
+}
 }
