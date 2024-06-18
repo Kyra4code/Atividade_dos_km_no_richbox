@@ -36,6 +36,7 @@ namespace Carros
 				valorm += media1;
 			}
 			float x = valorm /15;
+			
 			//separando os acima da média paa o richtextbox da direita.
 			
 			label3.Text = "Média: " + x.ToString();
@@ -61,11 +62,11 @@ namespace Carros
 		{
 				DialogResult r = MessageBox.Show("Deseja salvar o arquivo?", "Salvar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-				if(r == DialogResult.OK) {
+				if(r == DialogResult.OK){
 				Lista_eco.SaveFile("melhores.txt", RichTextBoxStreamType.PlainText);
 				MessageBox.Show("Arquivo salvo com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			} 
-			else if(r == DialogResult.Cancel) { }
+			}
+			else if(r == DialogResult.Cancel){}
 		}
 }
 }
