@@ -59,8 +59,13 @@ namespace Carros
 		
 		void Button3Click(object sender, EventArgs e)
 		{
-			Lista_eco.SaveFile("melhores.txt", RichTextBoxStreamType.PlainText);
-			MessageBox.Show("Arquivo salvo com sucesso");
+				DialogResult r = MessageBox.Show("Deseja salvar o arquivo?", "Salvar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+				if(r == DialogResult.OK) {
+				Lista_eco.SaveFile("melhores.txt", RichTextBoxStreamType.PlainText);
+				MessageBox.Show("Arquivo salvo com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			} 
+			else if(r == DialogResult.Cancel) { }
 		}
 }
 }

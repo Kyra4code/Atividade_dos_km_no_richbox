@@ -14,3 +14,11 @@ C:\Users\aluno\Documents\f\bla_bla\Carros\bin\Debug\Carros.exe.config
 C:\Users\aluno\Documents\f\bla_bla\Carros\bin\Debug\Carros.exe
 C:\Users\aluno\Documents\f\bla_bla\Carros\bin\Debug\Carros.pdb
 C:\Users\aluno\Documents\f\bla_bla\Carros\obj\Debug\Carros.pdb
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\bin\Debug\Carros.exe.config
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\bin\Debug\Carros.exe
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\bin\Debug\Carros.pdb
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\obj\Debug\Carros.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\obj\Debug\Carros.MainForm.resources
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\obj\Debug\Carros.csproj.GenerateResource.Cache
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\obj\Debug\Carros.exe
+C:\Users\aluno\Downloads\att\Atividade_dos_km_no_richbox\Carros\obj\Debug\Carros.pdb
